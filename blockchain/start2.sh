@@ -1,0 +1,1 @@
+geth --datadir node2 --networkid 7002017 --port 30305 --rpc --rpcport 8550 --rpcaddr "127.0.0.1" --rpcapi="db, eth, net, web3, personal, admin, txpool, debug" --unlock "0xe2ac01c36961643846d89a654f751a501918f9a4" console 2>console2.log

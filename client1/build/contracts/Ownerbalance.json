@@ -1,0 +1,342 @@
+{
+  "contractName": "Ownerbalance",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "ownerbalancereturner",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getOwnerBalance",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x6060604052341561000f57600080fd5b61013d8061001e6000396000f30060606040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063590791f214610051578063d3152a1e1461007a575b600080fd5b341561005c57600080fd5b61006461008f565b6040518082815260200191505060405180910390f35b341561008557600080fd5b61008d6100cf565b005b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1631905090565b336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505600a165627a7a723058207c3ec8c486ff043231faa66ef6a71103960e4173763acfec4f6a71c81537ca5d0029",
+  "deployedBytecode": "0x60606040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063590791f214610051578063d3152a1e1461007a575b600080fd5b341561005c57600080fd5b61006461008f565b6040518082815260200191505060405180910390f35b341561008557600080fd5b61008d6100cf565b005b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1631905090565b336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505600a165627a7a723058207c3ec8c486ff043231faa66ef6a71103960e4173763acfec4f6a71c81537ca5d0029",
+  "sourceMap": "0:220:0:-;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "0:220:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;130:88;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;49:75;;;;;;;;;;;;;;130:88;175:4;198:5;;;;;;;;;;;:13;;;191:20;;130:88;:::o;49:75::-;106:10;98:5;;:18;;;;;;;;;;;;;;;;;;49:75::o",
+  "source": "contract Ownerbalance {\n\n    address owner;\n\n    function ownerbalancereturner() public {\n        owner = msg.sender; \n    }\n\n    function getOwnerBalance() constant returns (uint) {\n        return owner.balance;\n    }\n}\n",
+  "sourcePath": "/home/kai/Probe1--Dapp/client1/contracts/Balance.sol",
+  "ast": {
+    "attributes": {
+      "absolutePath": "/home/kai/Probe1--Dapp/client1/contracts/Balance.sol",
+      "exportedSymbols": {
+        "Ownerbalance": [
+          21
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            21
+          ],
+          "name": "Ownerbalance",
+          "scope": 22
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": false,
+              "name": "owner",
+              "scope": 21,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "address",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "address",
+                  "type": "address"
+                },
+                "id": 1,
+                "name": "ElementaryTypeName",
+                "src": "29:7:0"
+              }
+            ],
+            "id": 2,
+            "name": "VariableDeclaration",
+            "src": "29:13:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "ownerbalancereturner",
+              "payable": false,
+              "scope": 21,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 3,
+                "name": "ParameterList",
+                "src": "78:2:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 4,
+                "name": "ParameterList",
+                "src": "88:0:0"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "address"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 2,
+                              "type": "address",
+                              "value": "owner"
+                            },
+                            "id": 5,
+                            "name": "Identifier",
+                            "src": "98:5:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "sender",
+                              "referencedDeclaration": null,
+                              "type": "address"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 33,
+                                  "type": "msg",
+                                  "value": "msg"
+                                },
+                                "id": 6,
+                                "name": "Identifier",
+                                "src": "106:3:0"
+                              }
+                            ],
+                            "id": 7,
+                            "name": "MemberAccess",
+                            "src": "106:10:0"
+                          }
+                        ],
+                        "id": 8,
+                        "name": "Assignment",
+                        "src": "98:18:0"
+                      }
+                    ],
+                    "id": 9,
+                    "name": "ExpressionStatement",
+                    "src": "98:18:0"
+                  }
+                ],
+                "id": 10,
+                "name": "Block",
+                "src": "88:36:0"
+              }
+            ],
+            "id": 11,
+            "name": "FunctionDefinition",
+            "src": "49:75:0"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "getOwnerBalance",
+              "payable": false,
+              "scope": 21,
+              "stateMutability": "view",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 12,
+                "name": "ParameterList",
+                "src": "154:2:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 20,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 13,
+                        "name": "ElementaryTypeName",
+                        "src": "175:4:0"
+                      }
+                    ],
+                    "id": 14,
+                    "name": "VariableDeclaration",
+                    "src": "175:4:0"
+                  }
+                ],
+                "id": 15,
+                "name": "ParameterList",
+                "src": "174:6:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 15
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "member_name": "balance",
+                          "referencedDeclaration": null,
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 2,
+                              "type": "address",
+                              "value": "owner"
+                            },
+                            "id": 16,
+                            "name": "Identifier",
+                            "src": "198:5:0"
+                          }
+                        ],
+                        "id": 17,
+                        "name": "MemberAccess",
+                        "src": "198:13:0"
+                      }
+                    ],
+                    "id": 18,
+                    "name": "Return",
+                    "src": "191:20:0"
+                  }
+                ],
+                "id": 19,
+                "name": "Block",
+                "src": "181:37:0"
+              }
+            ],
+            "id": 20,
+            "name": "FunctionDefinition",
+            "src": "130:88:0"
+          }
+        ],
+        "id": 21,
+        "name": "ContractDefinition",
+        "src": "0:220:0"
+      }
+    ],
+    "id": 22,
+    "name": "SourceUnit",
+    "src": "0:221:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.19+commit.c4cbbb05.Emscripten.clang"
+  },
+  "networks": {
+    "7002017": {
+      "events": {},
+      "links": {},
+      "address": "0x0f08209e2b02864120488a03de5775b77c3eca19"
+    }
+  },
+  "schemaVersion": "1.0.1",
+  "updatedAt": "2018-04-16T19:21:44.962Z"
+}
